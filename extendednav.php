@@ -10,29 +10,29 @@
 */
 function custom_menu( $menu ){
 	wp_nav_menu(
-      array(
-        'theme_location'  	=> $menu['menuname'],      
-        'container'         => $menu['container'],
-        'container_id'      => $menu['container_id'],
-        'container_class'   => $menu['container_class'],
-        'menu_class'        => $menu['menu_class'],
-        'fallback_cb'       => 'extended_nav::fallback',                  
-        'walker'            => new extended_nav(
-        	$menu['depth'],
-        	$menu['level_0_li'],
-        	$menu['level_0_a'],
-        	$menu['level_0_li_submenu'],
-        	$menu['level_0_a_submenu'],
-        	$menu['level_0_ul_submenu'],
-        	$menu['level_1_li'],
-        	$menu['level_1_a'],        	
-        	$menu['level_1_li_submenu'],
-        	$menu['level_1_a_submenu'],
-        	$menu['level_1_ul_submenu'],
-        	$menu['level_2_li'],
-        	$menu['level_2_a']
-        ),
-      )
+	    array(
+	        'theme_location'  	=> $menu['menuname'],      
+	        'container'         => $menu['container'],
+	        'container_id'      => $menu['container_id'],
+	        'container_class'   => $menu['container_class'],
+	        'menu_class'        => $menu['menu_class'],
+	        'fallback_cb'       => 'extended_nav::fallback',                  
+	        'walker'            => new extended_nav(
+	        	$menu['depth'],
+	        	$menu['level_0_li'],
+	        	$menu['level_0_a'],
+	        	$menu['level_0_li_submenu'],
+	        	$menu['level_0_a_submenu'],
+	        	$menu['level_0_ul_submenu'],
+	        	$menu['level_1_li'],
+	        	$menu['level_1_a'],        	
+	        	$menu['level_1_li_submenu'],
+	        	$menu['level_1_a_submenu'],
+	        	$menu['level_1_ul_submenu'],
+	        	$menu['level_2_li'],
+	        	$menu['level_2_a']
+	        ),
+      	)
     ); 
 };
 
