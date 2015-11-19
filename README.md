@@ -4,3 +4,7 @@ A extended WordPress nav walker for manipulating classes based on the created na
 I have extended the awesome method of https://github.com/twittem/wp-bootstrap-navwalker for manipulating the WordPress navigation. 
 
 This function will give you the possibility of manipulating the classes the WordPress navigation creates. Please see the preview attached.
+
+## Installing
+
+The only requirement is to require the extendednav.php in your functions.php and use the function custom_menu() in your theme.
